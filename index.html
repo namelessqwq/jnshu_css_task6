@@ -6,6 +6,8 @@
   <title>Document</title>
   <link href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/base.css">
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
   <div class="header">
@@ -18,21 +20,21 @@
 
   <div class="filter-bar">
     <ul>
-      <li>所在地
-        <ul class="select">
+      <li><a data-toggle="dropdown" href="#">所在地</a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
           <li>123</li>
           <li>456</li>
           <li>789</li>
         </ul>
       </li>
-      <li>食宿
-        <ul class="select">
+      <li><a data-toggle="dropdown" href="#">食宿</a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
           <li>123</li>
           <li>456</li>
           <li>789</li>
         </ul></li>
-      <li>病人情况
-        <ul class="select">
+      <li><a data-toggle="dropdown" href="#">病人情况</a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
           <li>123</li>
           <li>456</li>
           <li>789</li>
@@ -43,11 +45,64 @@
   <div class="header-fixed"></div>
 
   <div class="main">
-    <ul>
-      <li></li>
+    <ul class="data">
+      <li class="date">服务日期</li>
+      <li class="duration">
+				<div>2015-7-5至2015-7-12</div>
+				<div class="price">
+					<span>25元/小时</span>
+					<span>></span>
+				</div>
+			</li>
+      <li class="position">北京.通州.果园</li>
     </ul>
+		<ul class="data">
+		  <li class="date">服务日期</li>
+		  <li class="duration">
+				<div>2015-7-5至2015-7-12</div>
+				<div class="price">
+					<span>25元/小时</span>
+					<span>></span>
+				</div>
+			</li>
+		  <li class="position">北京.通州.果园</li>
+		</ul>
+		<ul class="data">
+		  <li class="date">服务日期</li>
+		  <li class="duration">
+				<div>2015-7-5至2015-7-12</div>
+				<div class="price">
+					<span>25元/小时</span>
+					<span>></span>
+				</div>
+			</li>
+		  <li class="position">北京.通州.果园</li>
+		</ul>
+		<ul class="data">
+		  <li class="date">服务日期</li>
+		  <li class="duration">
+				<div>2015-7-5至2015-7-12</div>
+				<div class="price">
+					<span>25元/小时</span>
+					<span>></span>
+				</div>
+			</li>
+		  <li class="position">北京.通州.果园</li>
+		</ul>
+		<ul class="data">
+		  <li class="date">服务日期</li>
+		  <li class="duration">
+				<div>2015-7-5至2015-7-12</div>
+				<div class="price">
+					<span>25元/小时</span>
+					<span>></span>
+				</div>
+			</li>
+		  <li class="position">北京.通州.果园</li>
+		</ul>
   </div>
 
+	
 
   <div class="footer">
     <div class="home">
@@ -70,5 +125,9 @@
   </div>
 
   <div class="footer-fixed"></div>
+  
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

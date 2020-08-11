@@ -4,6 +4,7 @@ li {
 
 ul {
   margin: 0;
+	padding: 0;
 }
 
 button {
@@ -11,6 +12,16 @@ button {
   border: none;
   background-color: none;
 }
+
+@media screen and (max-width: 380px) {
+    .main .duration div:nth-child(1) {
+			width: 50px;
+			overflow: hidden;
+			text-overflow:ellipsis;
+			white-space: nowrap;
+		}
+}
+
 /* header部分 */
 .header {
   height: 90px;
@@ -66,6 +77,8 @@ button {
   position: fixed;
   top: 90px;
   width: 100%;
+	background-color: #ffffff;
+	z-index: 10;
 }
 
 .filter-bar > ul {
@@ -84,6 +97,11 @@ button {
   line-height: 80px;
 }
 
+.filter-bar > ul > li > a {
+	text-decoration: none;
+	color: #000;
+}
+
 .filter-bar > ul > li::after {
   height:8px;
   width:13px;
@@ -100,15 +118,7 @@ button {
   height: 170px;
 }
 
-/* 下拉框 */
-.select li{
-  display: none;
 
-}
-
-.select li:hover {
-  display: block;
-}
 
 
 /* footer部分 */
@@ -206,3 +216,65 @@ button {
 }
 
 /* main部分  */
+.main {
+	color: #999;
+	font-size: 20px;
+}
+
+.main .data:after {
+	height: 20px;
+	width: 100%;
+	content: "";
+	display: block;
+	border-bottom: 1px solid #e1e5e7;
+}
+
+.main .date {
+	padding-left: 40px;
+	margin-top: 15px;
+	margin-left: 10px;
+	height: 24px;
+	background-image: url(../img/img.png);
+	background-repeat: no-repeat;
+	background-position: 0 -31px;
+}
+
+.main .duration {
+	margin-top: 15px;
+	margin-left: 10px;
+
+}
+
+.main .duration > div:nth-child(1) {
+	float: left;
+	margin-left: 40px;
+	color: #000000;
+}
+
+.main .duration .price {
+	float: right;
+	margin-right: 20px;
+	color: red;
+}
+
+.main .duration .price > span:nth-last-child(1) {
+	color: #5fc0cd;
+}
+
+.duration:after {
+	content: "";
+	display: table;
+	clear: both;
+	visibility: hidden;
+}
+
+.main .position {
+	margin-top: 10px;
+	margin-left: 10px;
+	padding-left: 40px;
+	height: 22px;
+	background-image: url(../img/img.png);
+	background-repeat: no-repeat;
+	background-position: 0 -8px;
+}
+
